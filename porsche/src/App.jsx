@@ -11,3 +11,15 @@ return (
 }
 
 export default App
+
+import PorscheSection from "./componentes/PorscheSection";
+
+function App() {
+  return (
+    <>
+      <PorscheSection />
+    </>
+  );
+}
+
+export default App;
