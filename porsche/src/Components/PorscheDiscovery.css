@@ -1,0 +1,73 @@
+.porsche-section {
+  padding: 50px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif; /* Porsche usa una fuente similar a Arimo o Franklin Gothic */
+}
+
+.section-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.porsche-card {
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden; /* Esto es vital para que el zoom no se salga del cuadro */
+  cursor: pointer;
+  aspect-ratio: 4 / 5; /* Mantiene la proporción vertical de la imagen */
+}
+
+.image-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s cubic-bezier(0.25, 1, 0.5, 1); /* Transición suave */
+}
+
+/* EFECTO ZOOM AL PASAR EL MOUSE */
+.porsche-card:hover .card-image {
+  transform: scale(1.08); /* Aumenta el tamaño un 8% */
+}
+
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.7)); /* Degradado para leer el texto */
+  color: white;
+  box-sizing: border-box;
+}
+
+.card-text {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: left;
+  max-width: 80%;
+}
+
+.card-arrow {
+  font-size: 1.5rem;
+  transition: transform 0.3s ease;
+}
+
+.porsche-card:hover .card-arrow {
+  transform: translateX(5px); /* Pequeño movimiento de la flecha al hacer hover */
+}
