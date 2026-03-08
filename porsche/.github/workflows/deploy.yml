@@ -39,7 +39,6 @@ jobs:
         with:
           node-version: lts/*
           cache: 'npm'
-          cache-dependency-path: './porsche/package-lock.json'
       - name: Instalar dependencias
         run: npm install --legacy-peer-deps
       - name: Construir
