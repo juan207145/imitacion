@@ -1,0 +1,142 @@
+/* PorscheMiniconfig.css */
+.config-card {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 380px;
+  margin: 20px auto;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  font-family: Arial, sans-serif;
+}
+
+.config-preview {
+  height: 180px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease; /* Cambia el fondo suavemente */
+  position: relative;
+  overflow: hidden;
+}
+
+.car-image {
+  max-width: 90%;
+  height: auto;
+  object-fit: contain;
+  z-index: 2;
+  /* Animación para que el auto "aparezca" al cambiar */
+  animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.color-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-color {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.btn-active {
+  transform: scale(1.15);
+  outline: 3px solid #007bff;
+}
+
+.selection-text {
+  margin-top: 15px;
+  font-size: 14px;
+}/* PorscheMiniconfig.css */
+.config-card {
+  border: 1px solid #ddd;
+  border-radius: 16px;
+  padding: 24px;
+  max-width: 380px;
+  margin: 20px auto;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.config-title {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.config-preview {
+  height: 200px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.5s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.car-image {
+  max-width: 85%;
+  height: auto;
+  z-index: 2;
+  /* Animación suave al cambiar */
+  animation: fadeIn 0.5s ease;
+}
+
+.color-label-overlay {
+  position: absolute;
+  z-index: 1;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 4px rgba(0,0,0,0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.color-container {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.btn-color {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: all 0.2s ease;
+}
+
+.btn-active {
+  transform: scale(1.2);
+  outline: 3px solid #007bff;
+  box-shadow: 0 0 10px rgba(0,123,255,0.3);
+}
+
+.selection-text {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #333;
+}

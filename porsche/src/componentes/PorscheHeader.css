@@ -1,0 +1,75 @@
+.header-container {
+  width: 100%;
+  height: 80px;
+  /* CAMBIO: Se ha añadido un degradado lineal */
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.95) 0%, rgba(0, 0, 0, 0.7) 100%);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif; /* O una fuente similar sin serifa */
+  /* Opcional: añade una sombra para mayor profundidad */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Menú */
+.menu-button {
+  background: none;
+  border: none;
+  color: white;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 0;
+  gap: 12px;
+}
+
+.menu-icon {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.line {
+  width: 18px;
+  height: 2px;
+  background-color: white;
+  display: block;
+}
+
+.menu-text {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Logo */
+.logo-container {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-text {
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 8px; /* Espaciado característico del logo */
+  margin: 0;
+  text-align: center;
+}
+
+/* Spacer para equilibrar el flexbox */
+.header-spacer {
+  width: 70px; /* Ajustar según el ancho del botón de menú */
+}
